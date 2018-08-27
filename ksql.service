@@ -1,0 +1,14 @@
+[Unit]
+Description=KSQL
+Documentation=https://docs.confluent.io/current/ksql/docs/index.html
+Requires=network.target remote-fs.target
+After=network.target remote-fs.target
+
+[Service]
+Type=simple
+Environment="JMX_PORT=1099"
+ExecStart=/usr/bin/ksql-server-start /etc/ksql/ksql-server.properties
+ExecStop=/usr/bin/ksql-server-stop
+
+[Install]
+WantedBy=multi-user.target

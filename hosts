@@ -1,0 +1,9 @@
+192.168.56.71  zookeeper zookeeper1
+192.168.56.81  kafka1
+192.168.56.82  kafka2
+192.168.56.83  kafka3
+192.168.56.84  schemaregistry
+192.168.56.84  controlcenter
+192.168.56.85  kafkaconnect1
+192.168.56.86  kafkaconnect2
+192.168.56.87  ksql1
